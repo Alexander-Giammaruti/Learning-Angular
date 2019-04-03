@@ -1,0 +1,8 @@
+<h2>Welcome to my Recipe Book!</h2>
+<div class="row">
+  <div class="col-xs-12">
+    <ul>
+      <li *ngIf="!(isAuthenticated| async).authenticated">Please register, and/or log in to access the full features</li>
+    </ul>
+  </div>
+</div>
