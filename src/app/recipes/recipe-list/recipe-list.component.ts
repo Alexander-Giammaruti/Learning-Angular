@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { Recipe } from '../recipe.model';
 
 import { Router, ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -23,12 +22,6 @@ export class RecipeListComponent implements OnInit {
 
   ngOnInit() {
     this.isAuthenticated = this.store.select('auth');
-    // this.subscription = this.recipeService.recipesChanged.subscribe(
-    //   (recipes: Recipe[]) => {
-    //     this.recipes = recipes;
-    //   }
-    // );
-    // this.recipes = this.recipeService.getRecipes();
     this.recipeState = this.store.select('recipes');
   }
 

@@ -1,6 +1,5 @@
 import { Effect, Actions, ofType } from '@ngrx/effects';
-import { switchMap } from 'rxjs/operators/switchMap';
-import { map, withLatestFrom } from 'rxjs/operators';
+import { map, withLatestFrom, switchMap } from 'rxjs/operators';
 import { HttpClient, HttpRequest } from '@angular/common/http'
 
 import * as RecipeActions from './recipe.actions';
